@@ -86,7 +86,7 @@ body {
   width: 100%;
 }
 
-/* ---------- HERO (HEADER) ---------- */
+
 
 
 
@@ -357,4 +357,28 @@ a:hover {
   color: var(--accent);
   font-weight: 500;
   letter-spacing: 0.6px;
+}
+.hero {
+  min-height: calc(100vh - 64px); /* navbar height */
+}
+
+@media (max-width: 768px) {
+  section {
+    border-radius: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 28px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .project,
+  .education-card,
+  .skill-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  p {
+    line-height: 1.7;
+  }
 }
